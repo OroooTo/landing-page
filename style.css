@@ -6,6 +6,11 @@ body {
     font-family: 'Roboto', 'Times New Roman', Times, serif;
 }
 
+p {
+    margin: 0;
+    padding: 0;
+}
+
 .header, .sub-header, .footer {
     background-color: #1f2937;
 }
@@ -15,9 +20,18 @@ body {
     font-size: 24px;
 }
 
+.main-title {
+    font-size: 48px;
+    font-weight: bolder;
+}
+
 a {
     text-decoration: none;
     color: rgb(216, 216, 216);
+}
+
+.image img {
+    width: 300px;
 }
 
 .main-title, .subtext, .footer {
@@ -37,9 +51,16 @@ button {
 }
 
 .cards {
-    border-width: 22px;
-    border-color: #3882f6;
+    
 }
+
+img {
+    width: 100px;
+    border-radius: 20%;
+    border: 2px solid #3882f6;
+}
+
+
 
 .quote {
     background-color: #e5e7eb;
