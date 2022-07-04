@@ -50,9 +50,6 @@ button {
     color: #1f2937;
 }
 
-.cards {
-    
-}
 
 img {
     width: 100px;
@@ -67,7 +64,6 @@ img {
 }
 
 .actual-quote {
-    color:  ;
     font-size: 36px;
     font-style: italic;
 }
