@@ -1,7 +1,6 @@
 body {
     display: flex;
     flex-direction: column;
-    justify-content: stretch;
     margin: 0;
     padding: 0;
     font-family: 'Roboto', 'Times New Roman', Times, serif;
@@ -16,10 +15,30 @@ p {
     background-color: #1f2937;
 }
 
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 15px;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
 .logo {
     color: white;
     font-size: 24px;
     font-weight: 900;
+}
+
+.header-links {
+    display: flex;
+    gap: 20px   ;
+}
+
+.sub-header {
+    display: flex;
+    padding-top: 30px;
+    padding-left: 150px;
+    padding-right: 150px;
 }
 
 .main-title {
@@ -33,7 +52,7 @@ a {
 }
 
 .image img {
-    width: 300px;
+    width: 400px;
 }
 
 .main-title, .subtext, .footer {
@@ -44,13 +63,17 @@ button {
     background-color: #3882f6;
     color: white;
     font-weight: 900;
-    border-radius: 15%;
+    border-radius: 12%;
     margin: 0;
-    padding-right: 25px;
-    padding-left: 25px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    text-align: center;    
+    width: 100px;
+    height: 25px;
+    text-align: center;  
+    border-style: none;
+}
+
+.call-banner button {
+    border-color:white;
+    border-style:solid;
 }
 
 .cards-title {
@@ -58,38 +81,69 @@ button {
     text-align: center;
     font-size: 36px;
     color: #1f2937;
+    margin-top: 20px;
 }
 
 .cards-place {
     display: flex;
+    justify-content: center;
+}
+
+.cards {
+    display: flex;
+    flex-basis: 140px;
+    flex-wrap: wrap;
+    margin: 20px;
 }
 
 .cards img {
-    width: 100px;
-    border-radius: 20%;
-    border: 2px solid #3882f6;
+    display: flex;
+    width: 140px;
+    height: 140px;
+    border-radius: 10%;
+    border: 3px solid #3882f6;
+}
+
+.cards p {
+    text-align: center;
+
 }
 
 .quote {
     background-color: #e5e7eb;
-}
+    display: flex;
+    flex-direction: column;
+    flex-basis: 200px;
+    justify-content: center;
+    }
 
 .actual-quote {
-    font-size: 36px;
+    font-size: 30px;
     font-style: italic;
+    }
+
+.quote-signature {
+    font-weight: 900;
 }
 
 .call-banner-space {
     display: flex;
     justify-content: center;
+    border-radius: 20%;
 }
 
 .call-banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #3882f6;
     margin: 50px;
+    color: white;
+    flex-basis: 900px;
+    height: 100px;
 }
 
-.quote-signature {
+.call-time {
     font-weight: 900;
 }
 
