@@ -34,11 +34,24 @@ p {
     gap: 20px   ;
 }
 
+a {
+    text-decoration: none;
+    color: rgb(216, 216, 216);
+}
+
 .sub-header {
     display: flex;
-    padding-top: 30px;
-    padding-left: 150px;
-    padding-right: 150px;
+    justify-content: space-between;
+    padding: 80px 150px;
+    gap: 90px;
+    flex: auto;
+}
+
+.sub-header-text {
+    display: flex;
+    flex-direction: column;
+    flex: auto;
+    gap: 10px;
 }
 
 .main-title {
@@ -46,13 +59,8 @@ p {
     font-weight: bolder;
 }
 
-a {
-    text-decoration: none;
-    color: rgb(216, 216, 216);
-}
-
 .image img {
-    width: 400px;
+    width: 400px;    
 }
 
 .main-title, .subtext, .footer {
@@ -64,9 +72,10 @@ button {
     color: white;
     font-weight: 900;
     border-radius: 5px;
+    border-width: 2px;
     margin: 0;
     width: 100px;
-    height: 25px;
+    height: 30px;
     text-align: center;  
     border-style: none;
 }
@@ -115,15 +124,17 @@ button {
     background-color: #e5e7eb;
     display: flex;
     flex-direction: column;
-    flex-basis: 200px;
+    flex-basis: 300px;
     justify-content: center;
-    padding: 0px 150px;
+    padding: 0px 300px;
+    gap: 10px;
     }
 
 .actual-quote {
+    display: flex;
     font-size: 30px;
     font-style: italic;
-    text-align: center;
+    text-align: start;
     }
 
 .quote-signature {
@@ -131,28 +142,29 @@ button {
     text-align: end;
 }
 
-.call-banner-space {
-    display: flex;
-}
-
 .call-banner {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
     background-color: #3882f6;
     color: white;
     flex: 1;
     height: 150px;
-    border-radius: 10px;
+    border-radius: 7px;
     margin: 50px 150px;
+    padding: 30px 100px;
 }
 
 .call-time {
+    display: flex;
+    flex-direction: column;
+}
+
+strong {
     font-weight: 900;
 }
 
 .footer {
     display: flex;
     justify-content: center;
-    padding: 20px;
+    padding: 30px;
 }
