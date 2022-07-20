@@ -50,17 +50,19 @@ a {
 .sub-header-text {
     display: flex;
     flex-direction: column;
-    flex: auto;
+    flex-basis: 410px;
     gap: 10px;
 }
 
 .main-title {
+    display: flex;
     font-size: 48px;
     font-weight: bolder;
 }
 
 .image img {
-    width: 400px;    
+    display: flex;
+    width: 350px;
 }
 
 .main-title, .subtext, .footer {
@@ -78,11 +80,6 @@ button {
     height: 30px;
     text-align: center;  
     border-style: none;
-}
-
-.call-banner button {
-    border-color:white;
-    border-style:solid;
 }
 
 .cards-title {
@@ -124,9 +121,8 @@ button {
     background-color: #e5e7eb;
     display: flex;
     flex-direction: column;
-    flex-basis: 300px;
     justify-content: center;
-    padding: 0px 300px;
+    padding: 60px 300px;
     gap: 10px;
     }
 
@@ -144,19 +140,28 @@ button {
 
 .call-banner {
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
     background-color: #3882f6;
     color: white;
-    flex: 1;
-    height: 150px;
     border-radius: 7px;
     margin: 50px 150px;
-    padding: 30px 100px;
+    padding: 40px 100px;
 }
 
 .call-time {
     display: flex;
     flex-direction: column;
+}
+
+/* .call-banner .sign-up-button {
+    display: flex;
+    align-self: center;
+} */
+
+.call-banner button {
+    border-color:white;
+    border-style:solid;
 }
 
 strong {
