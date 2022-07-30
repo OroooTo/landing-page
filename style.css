@@ -1,12 +1,11 @@
 body {
     display: flex;
     flex-direction: column;
-    margin: 0;
-    padding: 0;
     font-family: 'Roboto', 'Times New Roman', Times, serif;
+    min-height: 100vh;
 }
 
-p {
+p, body {
     margin: 0;
     padding: 0;
 }
@@ -21,6 +20,7 @@ p {
     padding-top: 15px;
     padding-left: 150px;
     padding-right: 150px;
+    flex: 1;
 }
 
 .logo {
@@ -42,9 +42,9 @@ a {
 .sub-header {
     display: flex;
     justify-content: space-between;
-    padding: 80px 150px;
+    padding: 0px 150px;
     gap: 90px;
-    flex: auto;
+    flex: 1;
 }
 
 .sub-header-text {
@@ -82,17 +82,28 @@ button {
     border-style: none;
 }
 
+.cards-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+}
+
 .cards-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-weight: 900;
-    text-align: center;
     font-size: 36px;
     color: #1f2937;
-    margin-top: 20px;
+    flex: 1;
 }
 
 .cards-place {
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex: 1;
 }
 
 .cards {
@@ -100,7 +111,6 @@ button {
     flex-basis: 140px;
     flex-wrap: wrap;
     margin: 20px;
-
 }
 
 .cards img {
@@ -122,8 +132,9 @@ button {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 60px 300px;
+    padding: 0px 300px;
     gap: 10px;
+    flex: 1;
     }
 
 .actual-quote {
@@ -138,15 +149,24 @@ button {
     text-align: end;
 }
 
+.call-box {
+    display: flex;
+    justify-content: center;
+    padding: 0px 150px;
+    flex: 1;
+
+}
+
 .call-banner {
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
+    flex-basis: 900px;
     background-color: #3882f6;
     color: white;
     border-radius: 7px;
-    margin: 50px 150px;
-    padding: 40px 100px;
+    padding: 0px 100px;
+    margin: 20px 0px;
 }
 
 .call-time {
@@ -154,22 +174,19 @@ button {
     flex-direction: column;
 }
 
-/* .call-banner .sign-up-button {
-    display: flex;
-    align-self: center;
-} */
-
 .call-banner button {
     border-color:white;
     border-style:solid;
 }
 
 strong {
-    font-weight: 900;
+    font-weight: 1000;
+    font-size: larger;
 }
 
 .footer {
     display: flex;
     justify-content: center;
     padding: 30px;
-}
+} 
+
